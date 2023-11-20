@@ -11,7 +11,6 @@ from fastapi import APIRouter, Request, Depends
 from config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
 
 from server.auth import auth_backend
-from models.models import food, admins, products
 from server.database import User
 from server.manager import get_user_manager
 from fastapi.middleware.cors import CORSMiddleware

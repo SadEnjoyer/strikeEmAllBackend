@@ -28,4 +28,3 @@ user = Table(
     Column("is_verified", Boolean, default=False, nullable=False),
 )
 
-S
