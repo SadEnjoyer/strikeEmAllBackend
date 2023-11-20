@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strike 'Em All</title>
+        <meta charset="utf-8">
+        <meta name="language" content="RU">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="stike-em-all-page">
+            <div class="header">
+                <div class="header-container">
+                    <div class="header-container__column header-logo">
+                        <a class="header-logo__link" href="#">
+                            <div class="header-logo__container">
+                                <img class="header-logo__container--img noselect" src="../img/strike-em-all-logo.svg" alt="three_targets">
+                                <span class="header-logo__container--label">Strike 'Em All</span>
+                            </div>
+                            <div class="header-logo__placeholder"></div>
+                        </a>
+                    </div>
+                    <nav class="header-container__column website-menu">
+                        <ul class="pieces">
+                            <li class="pieces__item"><a class="pieces__link" href="#">Каталог</a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#">Отзывы</a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-container__column catalog-search">
+                        <form class="catalog-search__form" action="/search/" method="get" autocomplete="off" >
+                            <input 
+                                type="text" 
+                                name="text"
+                                placeholder="Поиск по каталогу" 
+                                class="catalog-search__field">
+                        </form>
+                    </div>
+                    <nav class="header-container__column user-navigation">
+                        <ul class="pieces">
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/person_icon_fff.svg" alt="account"></a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/favourites_icon_fff.svg" alt="favourites"></a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/shopping_cart_icon_fff.svg" alt="shopping_basket"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-container">
+                    <div class="main-container__row category-header">
+                        <nav class="catalog-breadcrumbs">
+                            <ol class="stages">
+                                <li class="stages__item"><a class="stages__link" href="#">Главная</a></li>
+                                <li class="stages__item"><a class="stages__link" href="#">Каталог</a></li>
+                                <li class="stages__item stages__item--last"><span class="stages__link" href="#">Страйкбольные автоматы</span></li>
+                            </ol>
+                        </nav>
+                        <div class="header-headline">
+                            <h1 class="headline__item header-headline__label">Страйкбольные автоматы</h1>
+                            <span class="headline__item header-headline__count">3</span>
+                        </div>
+                        <div class="post-headline-space">
+                            <div class="post-headline__column filter-text">
+                                <img class="filter-text__column filter-text__img noselect" src="../img/icons/filter_icon_111.svg" alt="filters">
+                                <span class="filter-text__column filter-text__label">Фильтры</span>
+                            </div>
+                            <div class="post-headline__column filters-flow">
+                            </div>
+                            <div class="post-headline__column catalog-items-select">
+                                <form class="catalog-items-select__form" action="/select/" method="get">
+                                    <select class="catalog-items-select__button" name="catalog-items">
+                                        <option value="">По цене (возрастание)</option>
+                                        <option value="price_desc">По цене (убывание)</option>
+                                        <option value="name_asc">По названию (возрастание)</option>
+                                        <option value="name_desc">По названию (убывание)</option>
+                                        <option value="pop_desc">Популярные</option>
+                                        <option value="rate_desc">Высокий рейтинг</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <hr class="catalog-divide-line">
+                    </div>
+                    <div class="main-container__row category">
+                        <div class="category__column catalog-filter-column">
+                            <div class="catitem-filter" id="catitem-brand">
+                                <span class="catitem-filter__name">Бренд:</span>
+                                <ul class="pieces">
+                                    <li class="pieces__item noselect"><input type="checkbox">AGM</li>
+                                    <li class="pieces__item noselect"><input type="checkbox">Colt</li>
+                                    <li class="pieces__item noselect"><input type="checkbox">Cyma</li>
+                                </ul>
+                            </div>
+                            <div class="catitem-filter" id="catitem-caliber">
+                                <span class="catitem-filter__name">Калибр:</span>
+                                <ul class="pieces">
+                                    <li class="pieces__item noselect"><input type="checkbox">6ММ</li>
+                                    <li class="pieces__item noselect"><input type="checkbox">9ММ</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category__column catitem-column">
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/AGM_WWII_British_Sten_MKII.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/CYMA_Standard_AK47_FullMetal.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">22.490₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/AGM_WWII_British_Sten_MKII.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/CYMA_Standard_AK47_FullMetal.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">22.490₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/AGM_WWII_British_Sten_MKII.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/CYMA_Standard_AK47_FullMetal.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">19.990₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                            <div class="catitem-unit">
+                                <div class="catitem-unit__elem">
+                                    <a class="catitem-unit__elem__subelem" href="#"><img class="noselect" src="../img/items-previews/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"></a>
+                                    <a class="catitem-unit__elem__subelem catitem-label" href="#">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
+                                    <span class="catitem-unit__elem__subelem catitem-price">22.490₽</span>
+                                </div>
+                                <input class="catitem-unit__elem catitem-purchase-button" type="button" value="В корзину">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-container__column footer-logo">
+                            <div class="footer-logo__container">
+                                <a class="footer-logo__link" href="#"><span class="footer-logo__container--label">Strike 'Em All</span></a>
+                                <p class="footer-logo__container--copyright">© 2023 Все права защищены.</p>
+                            </div>
+                            <div class="header-logo__placeholder"></div>
+                    </div>
+                    <nav class="footer-container__column website-info">
+                        <span class="footer-label website-info-label">Информация</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Политика безопасности</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-container__column social-media">
+                        <span class="footer-label social-media-label">Социальные сети</span>
+                        <ul>
+                            <li><a class="social-media-item" href="#">
+                                <img class="noselect" src="../img/icons/vk_icon_fff.svg" alt="vk">
+                                <span>ВКонтакте</span>
+                            </a></li>
+                            <li><a class="social-media-item" href="#">
+                                <img class="noselect" src="../img/icons/telegram_icon_fff.svg" alt="telegram">
+                                <span>Telegram</span>
+                            </a></li>
+                            <li><a class="social-media-item" href="#">
+                                <img class="noselect" src="../img/icons/youtube_icon_fff.svg" alt="youtube">
+                                <span>YouTube</span>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
