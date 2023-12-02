@@ -28,3 +28,13 @@ user = Table(
     Column("is_verified", Boolean, default=False, nullable=False),
 )
 
+user = Table(
+    "rifle",
+    metadata,
+    Column("id", Integer, primary_key=True),
+    Column("brand", String, nullable=False),
+    Column("price", String, nullable=False),
+    Column("calibr", String, nullable=False),
+    
+)
+

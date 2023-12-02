@@ -4,13 +4,6 @@ from pydantic import BaseModel, ConfigDict
 from fastapi_users import schemas
 
 
-class ProductsRead(BaseModel):
-    from_attributes=True
-    id : int
-    name : str
-    price : int
-    food_type : int
-
 
 class UserRead(schemas.BaseUser[int]):
     id: int
